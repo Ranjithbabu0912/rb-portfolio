@@ -552,7 +552,7 @@ h3{
 
 /* ------ PROJECT BOX ------- */
 
-.project-container{
+.project-container {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -586,6 +586,11 @@ h3{
     color: #777;
     text-align: center;
 }
+.project-box a{
+    text-decoration: none;
+    color: #333;
+    padding-top: 20px;
+}
 .project-box::after, .contact-info::after{
     position: absolute;
     content: "";
@@ -602,6 +607,7 @@ h3{
 }
 .project-box:hover.project-box img,
 .project-box:hover.project-box>h3,
+.project-box:hover.project-box>a,
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
@@ -612,7 +618,9 @@ h3{
 
 
 /* ------ CONTACT BOX ------- */
-
+.con-head{
+    margin-bottom: 50px;
+}
 .contact-info{
     position: relative;
     display: flex;
@@ -905,7 +913,10 @@ footer{
 /* ------ MEDIA QUERY == 540px / RESPONSIVE ------- */
 
 @media only screen and(max-width:540px) {
-    .featured-name{
+    .featured-image{
+        margin-top: 40px;
+    }
+    .featured-name {
         font-size: 40px;
     }
     .project-box{
